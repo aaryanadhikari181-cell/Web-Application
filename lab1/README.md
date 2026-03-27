@@ -9,4 +9,4 @@ A personal portfolio website built with pure HTML, CSS, and JavaScript.
 - Dark theme with smooth scroll
 
 ## How to Run
-Just open `index.html` in your browser — no build step needed.
+Just open `home.html` in your browser — no build step needed.
