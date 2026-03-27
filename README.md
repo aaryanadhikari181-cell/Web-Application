@@ -21,7 +21,7 @@ Labs for Web Application Development course.
 ## LAB 1 — Portfolio with Calendar
 A personal portfolio website with an interactive calendar built in vanilla HTML, CSS, and JavaScript.
 
-**How to run:** Open `lab1/index.html` in your browser.
+**How to run:** Open `lab1/home.html` in your browser.
 
 ---
 
