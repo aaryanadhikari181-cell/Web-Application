@@ -1,0 +1,193 @@
+/* ===== RESET ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary: #6c63ff;
+  --primary-dark: #4e47d0;
+  --bg: #0f0e17;
+  --surface: #1a1a2e;
+  --card: #16213e;
+  --border: rgba(108,99,255,0.25);
+  --text: #fffffe;
+  --muted: #a7a9be;
+  --error: #ff6b6b;
+  --success: #38a169;
+  --radius: 12px;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  background-image: radial-gradient(ellipse at 50% 0%, rgba(108,99,255,0.15) 0%, transparent 60%);
+}
+
+/* ===== APP SHELL ===== */
+.app-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+.app-brand {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.app-brand h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.app-brand h1 span { color: var(--primary); }
+.app-brand p { color: var(--muted); font-size: 0.88rem; margin-top: 6px; }
+
+/* ===== TABS ===== */
+.tab-bar {
+  display: flex;
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 4px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+}
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.tab-active {
+  background: var(--primary);
+  color: white;
+}
+
+/* ===== FORM CARD ===== */
+.form-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.form-icon { font-size: 2.5rem; margin-bottom: 10px; }
+.form-header h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 6px; }
+.form-header p { color: var(--muted); font-size: 0.9rem; }
+
+/* ===== CUSTOM INPUT ===== */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.input-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.required-star { color: var(--error); }
+
+.input-field {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  color: var(--text);
+  font-size: 0.92rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.input-field:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(108,99,255,0.18);
+}
+
+.input-field.input-error {
+  border-color: var(--error);
+}
+
+.error-msg {
+  color: var(--error);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  width: 100%;
+  padding: 13px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  margin-top: 6px;
+}
+.btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+.btn-secondary {
+  padding: 10px 24px;
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background 0.2s;
+}
+.btn-secondary:hover { background: rgba(108,99,255,0.1); }
+
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* ===== FORM SWITCH ===== */
+.form-switch {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* ===== SUCCESS BOX ===== */
+.success-box {
+  background: var(--card);
+  border: 1px solid rgba(56,161,105,0.4);
+  border-radius: 16px;
+  padding: 40px 28px;
+  text-align: center;
+}
+.success-icon { font-size: 3rem; margin-bottom: 16px; }
+.success-box h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 8px; }
+.success-box p { color: var(--muted); font-size: 0.9rem; }
