@@ -1,8 +1,7 @@
 # Web Application Labs
 
 Labs for Web Application Development course.
-**Student:** Aaryan Adhikari
-**GitHub:** [aaryanadhikari181-cell](https://github.com/aaryanadhikari181-cell)
+
 
 ---
 
